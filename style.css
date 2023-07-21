@@ -582,7 +582,7 @@ cursor: pointer;}
 
 
      #mobileBtn {    
-      margin-top: 9.5rem;
+      margin-top: 10.5rem;
       margin-left: 13rem;
       position: absolute;
       
@@ -597,7 +597,7 @@ cursor: pointer;}
     background-size: initial;
     background-position: initial;
     height: 30vh;
-    
+    margin-top: -1rem;
     width: 108%;}
 
     .parent-Circle {
@@ -629,7 +629,7 @@ cursor: pointer;}
   margin-top: 4rem;
   position: absolute;
   margin-left: -2.2rem;
-  width: 23.2rem;
+  width: 23rem;
   height: 60px; 
    top: 39rem;
 }
