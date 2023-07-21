@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- <script src="https://kit.fontawesome.com/ebe42a541e.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  
+</head>
+<body>
+
+    <section>
+      <div class="container Main-form">
+        
+        <div class="siderBar">
+
+            <div class="parent-Circle">
+          <div class="circle-main">
+            <div class="morther-Circle"><span class="circle-group" id="circle-group-1">1</span></div>
+            
+            <div class="info-steps">
+              <p>Step 1</p>
+              <h6>YOUR INFO</h6>
+            </div>
+           
+           </div>  <!---   step 1-->
+
+           <div class="circle-main">
+            <div class="morther-Circle"><span class="circle-group circle-group-2">2</span></div>
+            
+            <div class="info-steps">
+              <p>Step 2</p>
+              <h6>SELECT PLAN</h6>
+            </div>
+           
+           </div><!----- --sep 3 begins here -->
+
+
+           <div class="circle-main">
+       
+            <div class="morther-Circle"><span class="circle-group circle-group-3">3</span></div>
+            
+            <div class="info-steps ">
+              <p>Step 3</p>
+              <h6>ADD-ONS</h6>
+            </div>
+          
+           
+           </div>  <!----- --sep 4 begins here -->
+       
+           <div class="circle-main">
+           
+            <div class="morther-Circle"><span class="circle-group circle-group-4">4</span></div>
+            
+            <div class="info-steps">
+              <p>Step 4</p>
+              <h6>SUMMARY</h6>
+            </div>
+         
+           </div>
+
+          </div>
+
+        </div>
+
+        <div class="form-Page"> <!--------  the form page begins here --- -->
+           <div class="display-one">
+          <div class="container biodata-form-page">
+            <h3>Personal Info</h3>
+            <p>Please provide your name, email addres, and phone number.</p>
+          </div>
+
+          <div class="Personal-Info-details">
+            <form action="" onsubmit="return validateAndSubmitForm()">
+                       <label for="">Name</label> <br>
+                      <span class="validate">Please enter your name</span>
+                      <input type="text" placeholder="Vanessa Mint" 
+                      class="form-control control-input" id="fullname"><br>
+
+                      <label for="">Email Address</label> <br>
+                      <span class="validate" id="error-2">Please enter a valid email</span>
+                      <input type="email" placeholder="Vanessamint@" 
+                      class="form-control control-input" id="emmailAdress"><br>
+
+                      <label for="">Phone Number</label> <br>
+                      <span class="validate-2">Please enter a valid phone number</span>
+                      <input type="number" placeholder="e.g. +1 23456789" 
+                      class="form-control control-input" id="phoneNumber"><br>
+                     
+                        <button type="submit" class="btn btnDisplay">Next Step</button>
+                        
+                        <div class="formBackground "> </div>
+                     
+            </form>
+            <button type="submit" id="mobileBtn" class="btn btnDisplay-2" onclick="validateAndSubmitForm()">Next Step</button>
+          </div> <!--------  the form page ends here --- -->
+        </div> <!--------  display one  ends here --- -->
+
+              <div class="display-two">
+          <div class="container biodata-form-page">
+            <h3>Select your plan</h3>
+            <p>You have option of monthly or yearly billing</p>
+          </div>
+
+          <div class="Mini-plan">
+            <div class="plan-1">
+              <img src="assets/images/icon-arcade.svg" alt="" srcset="">
+            
+
+              <div class="plan-selection" onclick="toggleActive(this)">
+                <h6 class="selectedPlan">Arcade</h6>
+                <p class="plan-amount">$9/mo</p>
+                <span class="yearly-plan-section"><!--2 months free--></span>
+              </div>
+            </div>
+            <div class="plan-2"><img src="assets/images/icon-advanced.svg" alt="" srcset="">
+           
+              <div class="plan-selection">
+                <h6 class="selectedPlan">Advance</h6>
+                <p class="plan-amount">$12/mo</p>
+                <span class="yearly-plan-section"><!--2 months free--></span>
+              </div>
+            </div>
+            <div class="plan-3"><img src="assets/images/icon-pro.svg" alt="" srcset="">
+              <div class="plan-selection">
+                <h6 class="selectedPlan">Pro</h6>
+                <p class="plan-amount">$15/mo</p>
+                <span class="yearly-plan-section"><!--2 months free--></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="button-switch buttonSwitchDisplay">
+            <span class="monthly">Monthly</span>
+            <span class="switch"></span>
+            <span class="yearly">Yearly</span>
+          </div>
+          <!-- for mobile device use only  -->
+          <section class="buttonSwitchDisplayB">
+            <div class="button-switch">
+              <span class="monthlyB">Monthly</span>
+              <span class="switchB"></span>
+              <span class="yearlyB">Yearly</span>
+            </div>
+          </section>
+             <!-- /for mobile device use only  -->
+
+          <div class="mini-plan-btn container-fluid">
+            <button type="submit" class="btn planButton-1 return-back-angle">Go Back</button>
+            <button type="submit" class="btn planButton-2" id="pickAddons">Next Step</button>
+          </div>
+        </div> <!--------  display two  ends here --- -->
+          
+
+
+        <div class="display-three ">
+          <div class="container biodata-form-page">
+            <h3>Pick add-ons</h3>
+            <p id="addOnP">Add-ons help enhance your gaming experience</p>
+          </div>
+
+          <div class="pick-add-ons">
+            <div class="Add-ons-box-1">
+              <div class="Add-ons-checkbox">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  <label class="form-check-label" for="flexCheckChecked">
+                    <!-- Checked checkbox -->
+                  </label>
+                </div> 
+
+              </div>
+              <div class="add-on-level-1">
+                <h6>Online service</h6>
+                <p>Acess to multiplayer games</p>
+              </div>
+              <div class="add-on-amount">
+                <p class="onlineAmount">+$1/mon</p>
+              </div>
+            </div>
+
+
+
+            <div class="Add-ons-box-1 margin-add-ons">
+              <!-- <span></span>
+              <span></span>
+              <span></span>
+              <span></span> -->
+              <div class="Add-ons-checkbox">
+              
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  <!-- Checked checkbox -->
+                </label>
+              </div>
+
+
+
+              </div>
+              <div class="add-on-level-1" id="largeStorage">
+                <h6>Larger storage</h6>
+                <p>Extra 1TB cloud save</p>
+              </div>
+              <div class="add-on-amount">
+                <p class="onlineAmount">+$1/mon</p>
+              </div>
+            </div>
+
+            <div class="Add-ons-box-1 margin-add-ons">
+              <div class="Add-ons-checkbox">
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  <label class="form-check-label" for="flexCheckChecked">
+                    <!-- Checked checkbox -->
+                  </label>
+                </div> 
+
+              </div>
+              <div class="add-on-level-1" id="Customizable">
+                <h6>Customizable profile</h6>
+                <p>Custom theme on your profile</p>
+              </div>
+              <div class="add-on-amount">
+                <p class="onlineAmount">+$1/mon</p>
+              </div>
+            </div>
+           
+
+            
+
+          </div>
+
+          
+
+
+          <div class="mini-plan-btn">
+            <button type="submit" class="btn planButton-1 return-back-angle">Go Back</button>
+            <button type="submit" class="btn planButton-2" id="planAddon-4">Next Step</button>
+          </div>
+        </div> <!--------  display three  ends here --- -->
+          
+
+
+
+        <div class="display-four">
+          <div class="container biodata-form-page">
+            <h3>Finishing up</h3>
+            <p>Double-check everything looks ok before confirming</p>
+          </div>
+
+          <div class="Personal-Info-details" >
+            <div class="Add-ons-box-2 ">
+            <div class="Add-ons-checkbox-2">
+
+              <div class="add-on-level-2">
+                <h6 class="planSelected">Arcade (Monthly)</h6>
+                <a href="">Change</a>
+              </div>
+              <div>
+                <div class="add-on-amount-2">
+                  <p class="serviceAmountUpdate">$9/mo</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="ruler"></div>
+            <div class="Add-ons-checkbox-2 ">
+
+              <div class="add-on-level-2 service">
+                <p class="OnlineServiceSelected">Online service</p>
+               
+              </div>
+              <div>
+                <div class="add-on-amount-3">
+                  <p class="serviceAmountUpdate">+$1/mo</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="Add-ons-checkbox-3 ">
+
+              <div class="add-on-level-2 service">
+                <p class="OnlineServiceSelected">Large storage</p>
+               
+              </div>
+              <div>
+                <div class="add-on-amount-3">
+                  <p class="serviceAmountUpdate">+$2/mo</p>
+                </div>
+              </div>
+
+            </div>
+            
+          </div>
+          <div class="Add-ons-checkbox-4">
+
+            <div class="add-on-level-3 service">
+              <p>Total (per month)</p>
+             
+            </div>
+            <div>
+              <div class="add-on-amount-4">
+                <p class="serviceAmountUpdate">+$12/mo</p>
+              </div>
+            </div>
+
+          </div>
+          
+
+          </div> <!--------  the form page ends here ----->
+
+          <div class="mini-plan-btn-2">
+            <button type="submit" class="btn planButton-1 return-back-angle">Go Back</button>
+            <button type="submit" class="btn planButton-2">Confirm</button>
+          </div>
+        </div> <!--------  display four  ends here --- -->
+
+
+
+
+        <div class="display-five">
+         
+
+          <div class="thankyou-level" >
+            <div>
+              <img src="assets/images/icon-thank-you.svg" alt="" srcset="">
+                 <h4>Thank you!</h4>
+                 <p>Thanks for confirming your subscription! We hope you have <br>
+                  fun using our platform. if you ever need support, please feel 
+                  <br> free to email us
+                at support@loremgaming.com </p>
+            </div>
+          
+
+          </div> <!--------  the form page ends here ----->
+
+         
+        </div> <!--------  display four  ends here --- -->
+
+
+
+
+        </div> 
+
+
+        
+
+
+      </div>
+    </section>
+  
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://twitter.com/GoodluckSteph12">Goodluck Stephen</a>.
+  </div>
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>

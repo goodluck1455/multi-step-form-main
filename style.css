@@ -1,0 +1,767 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+:root {
+    /**************************** 
+        Primary colors 
+    *****************************/
+    --brandColor: hsl(160, 39%, 71%);
+    --marineblue:  hsl(213, 96%, 18%);
+    --purplishBlue: hsl(243, 100%, 62%);
+    --PastelBlue: hsl(228, 100%, 84%);
+    --LightBlue: hsl(206, 94%, 87%);
+    --StrawberryRed: hsl(354, 84%, 57%);
+
+    /**************************** 
+            Neutral colors 
+     *****************************/
+
+     --CoolGray: hsl(231, 11%, 63%);
+     --LightGray: hsl(229, 24%, 87%);
+     --Magnolia: hsl(217, 100%, 97%);
+     --Alabaster: hsl(231, 100%, 99%);
+     --White: hsl(0, 0%, 100%);
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    font-weight: 400;
+    src: url("assets/fonts/Ubuntu-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Ubuntu";
+    src: url("assets/fonts/Ubuntu-Medium.ttf");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Ubuntu";
+    src: url("assets/fonts/Ubuntu-Bold.ttf");
+    font-weight: 700;
+  }
+
+
+
+
+
+body{
+    font-family: "Ubuntu";
+    background-color: hsl(212, 45%, 89%);
+}
+
+.attribution { font-size: 11px; text-align: center;  margin-top: 1rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.Main-form{
+    display: flex;
+    margin-top: 10px;
+    background: var(--White);
+    /* padding: 10px; */
+    width: 68%;
+    justify-content: center;
+    align-items: center;
+    /* height: 50%; */
+    border-radius: 10px;
+}
+
+.siderBar {
+    background-image: url("assets/images/bg-sidebar-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 98vh;
+    width: 46%;
+  }
+
+ .parent-Circle{
+   margin-top: 3rem;
+ }
+
+  .circle-main{
+    color: var(--White);
+    display: flex;
+    padding: 12px;
+    margin-left: 2rem;
+    /* margin-top: 3rem; */
+  }
+  .circle-group{
+    background-color: var(--LightBlue);
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: var(--marineblue);
+    font-weight: 700;
+    /* width: 100%; */
+     cursor: pointer;
+  }
+  .circle-group-2, .circle-group-3, .circle-group-4{
+    background: none;
+    border: 1px solid var(--LightBlue);
+    color: var(--LightBlue);
+  }
+  .morther-Circle{
+    margin-top: 12px;
+  }
+  .info-steps{
+    padding-left: 11px;
+    line-height: 0px;
+    margin-top: 17px;
+    cursor: pointer;
+  }
+  .info-steps h6{
+    margin-top: -5px;
+  }
+  .info-steps p{
+    color: var(--LightGray);
+  }
+  
+
+  /******************************************
+  The css for Personal information begins here 
+  ********************************************/
+  .btnDisplay-2{
+  display: none;
+  }
+  .form-Page{
+    width: 900px;
+    height: 600px;
+  }
+
+  .biodata-form-page h3{
+    margin-top: 3rem;
+    margin-left: 6rem;
+    font-weight: 700;
+    color: var(--marineblue);
+    /* font-family: 'Ubuntu', sans-serif; */
+  }
+  .biodata-form-page p{
+    color: var(--CoolGray);
+    margin-left: 6rem;
+  }
+  .Personal-Info-details{
+    margin-top: 2rem;
+    margin-left: 7rem;
+  }
+
+  .Personal-Info-details label{
+   
+    padding-bottom: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: var(--marineblue);
+ }
+ .Personal-Info-details .control-input{
+    /* background: #FFFFFF; */
+    /* border: 1px solid #1565D8; */
+    /* border: 1px solid #8692A6; */
+    font-weight: 500;
+    color: var(--marineblue);
+    height: 46px;
+    width: 87%;
+    /* margin-bottom: -10px; */
+    /* box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11); */
+    border-radius: 6px;
+ }
+
+ .Personal-Info-details .control-input:focus{
+    border: 1px solid var(--purplishBlue);
+ }
+ .Personal-Info-details input[placeholder]{
+  font-weight: 750;
+  color: var(--marineblue)
+ }
+
+ .Personal-Info-details button, .Personal-Info-details button:hover{
+    margin-top: 5rem;
+    margin-left: 21rem;
+    color: var(--White);
+    background-color: var(--marineblue);
+    z-index: 99;
+    
+ }
+ /* *****************
+ css for validating the form begins here 
+ *********************/
+
+ .validate{
+  color: var(--StrawberryRed);
+  position: absolute;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: -1.2rem;
+  margin-left: 16rem;
+  display: none;
+ }
+ .validate-2{
+  color: var(--StrawberryRed);
+  position: absolute;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: -1.2rem;
+  margin-left: 12rem;
+  display: none;
+ }
+
+
+
+  /* *****************
+ css for validating the form ends here 
+ *********************/
+
+
+
+ .display-one{
+  display: none;
+ }
+ .display-two{
+  display: none;
+ }
+ .display-three{
+  display: block;
+ }
+ .display-four{
+  display: none;
+ }
+ .display-five{
+  display: none;
+ }
+
+ /******************************************
+  The css for Mini-plans begins here 
+  ********************************************/
+ .Mini-plan{
+   display: flex;
+   justify-content: space-between;
+   width: 75%;
+   margin-top: 2rem;
+  margin-left: 7rem;
+ }
+ .plan-1, .plan-2, .plan-3{
+  border: 1px solid var(--LightGray);
+  border-radius: 6px;
+  padding: 10px;
+  background-color: var(--White);
+  cursor: pointer;
+  width: 29%;
+  height: 10rem;
+  transition: all 0.5s;
+ }
+ .plan-1:hover, .plan-2:hover, .plan-3:hover{
+  border: 1px solid var(--purplishBlue);
+  background-color: hsl(206, 94%, 87%, 0.2);
+  box-shadow: -1px 2px 0px 0 var(--purplishBlue);
+ }
+  .active{
+  border: 1px solid var(--purplishBlue);
+  background-color: hsl(206, 94%, 87%, 0.2);
+  box-shadow: -1px 1px 0px 0 var(--purplishBlue);
+ }
+
+ .plan-selection{
+  margin-top: 3rem;
+  /* margin-top: 2rem; */
+  line-height: 8px;
+ }
+ .plan-selection h6{
+  font-weight: 700;
+  color: var(--marineblue);
+ }
+
+ 
+ .plan-selection p{
+  color: var(--CoolGray);
+  font-weight: 400;
+  font-size: 15px;
+ }
+ .yearly-plan-section{
+  color: var(--marineblue);
+ font-weight: 400;
+ }
+
+ .button-switch{
+  display: flex;
+  height: 2rem;
+  width: 75%;
+  border-radius: 6px;
+  justify-content: space-evenly;
+  background-color:hsl(206, 94%, 87%, 0.2);
+  margin-top: 2rem;
+  margin-left: 7rem;
+ }
+ .buttonSwitchDisplayB{
+  display: none;
+ }
+ .switch{
+  position: relative;
+  background-color: var(--marineblue);
+  width: 7%;
+  /* padding: 10px; */
+margin-top: 7px;
+  border-radius: 10px;
+  height: 50%;
+cursor: pointer;}
+
+  .switch::after{
+    position: absolute;
+    content: " ";
+    /* padding: 10px; */
+    top: 2px;
+    left: var(--left-value, 4px);
+     /* left: 16px; */
+    /* margin-bottom: 1rem; */
+    /* margin: 4px; */
+    width: 35%;
+    background-color: var(--Magnolia);
+    height: 80%;
+    border-radius: 50%;
+  }
+  .monthly{
+    color: var(--marineblue);
+    font-weight: 500;
+  }
+
+   .yearly{
+    color: var(--CoolGray);
+    font-weight: 500;
+  }
+  .mini-plan-btn{
+    justify-content: space-between;
+    width: 76%;
+    margin-top: 9rem;
+    margin-left: 6.6rem;
+    display: flex;
+  }
+ .planButton-1{
+    font-weight: 700;
+    color: var(--CoolGray);
+  }
+  .planButton-1:hover{
+    font-weight: 700;
+    color: var(--marineblue);
+  }
+
+  .mini-plan-btn .planButton-2{
+    color: var(--White);
+    background-color: var(--marineblue);
+  }
+
+ /******************************************
+  The css for Add-ons begins here 
+  ********************************************/
+  .pick-add-ons{
+    
+    margin-left: 7rem;
+  }
+  .Add-ons-box-1{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 94%;
+    padding: 20px;
+    height: 5rem;
+    border-radius: 10px;
+    background-color: hsl(206, 94%, 87%, 0.2);
+    border: 1px solid var(--purplishBlue);
+    cursor: pointer;
+    animation: click-wave 0.7s ease-in-out;
+  }
+
+  .Add-ons-box-1:hover{
+    background-color: var(--White);
+  }
+
+   .Add-ons-box-1 span{
+    position: absolute;
+    display: block;
+   }
+   .Add-ons-box-1 span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 40%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--StrawberryRed));
+   }
+   .Add-ons-box-1:hover span:nth-child(1){
+    left: 34rem;
+    top: 14.8rem;
+    transition: 1s;
+    transform: translateY(100%);
+   }
+
+  .margin-add-ons{
+    margin-top: 14px;
+  }
+  .add-on-level-1{
+    line-height: 9px;
+    margin-left: -7rem;
+  }
+
+  #largeStorage{
+    margin-left: -10rem;
+  }
+  #Customizable{
+    margin-left: -5.3rem;
+  }
+
+  .add-on-amount{
+ color: var(--purplishBlue);
+  }
+
+  .Add-ons-checkbox{
+    margin-top: 0.5rem;
+   /* color: var(--purplishBlue); */
+  }
+
+  .form-check-input {
+    width: 1.3em;
+    height: 1.3em;
+    border: 1px solid var(--CoolGray);
+  }
+
+  .form-check-input:checked {
+    background-color: var(--purplishBlue);
+    /* border-color: #0d6efd; */
+}
+
+@keyframes click-wave{
+  0%{
+ 
+    /* width: 40%; */
+     margin-top: -80%;
+    opacity:0.7s;
+    /* position: relative; */
+  }
+  100%{
+    /* height: 200px; */
+    /* width: 100%; */
+    /* margin-top: 14px; */
+    margin-top: 50px;
+    opacity: 0;
+    /* margin-left: -80px;
+    margin-top: -80px; */
+  }
+}
+
+ /******************************************
+  The css for Active state four(4) begins here 
+  ********************************************/
+  .Add-ons-box-2{
+   
+   
+    width: 94%;
+    
+    height: 11rem;
+    border-radius: 7px;
+    background-color: hsl(206, 94%, 87%, 0.2);
+    border: 1px solid hsl(231, 11%, 63%, 0.2);
+    cursor: pointer;
+   
+  }
+
+  .add-on-level-2{
+    line-height: 9px;
+    /* margin-left: -7rem; */
+  }
+  .Add-ons-checkbox-2{
+    justify-content: space-between;
+    gap: 40px;
+    display: flex;
+    padding: 20px;
+    /* cursor: pointer; */
+   /* color: var(--purplishBlue); */
+  }
+  .Add-ons-checkbox-3{
+    justify-content: space-between;
+    gap: 40px;
+    display: flex;
+    padding: 20px;
+    margin-top: -2rem;
+   /* color: var(--purplishBlue); */
+  }
+  .Add-ons-checkbox-4{
+    width: 94%;
+    padding: 20px;
+    /* margin-top: 0.3rem; */
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .add-on-amount-2, .add-on-level-2 h6{
+    color: var(--marineblue);
+    font-weight: 500;
+     }
+     .add-on-amount-3, .add-on-amount-4{
+      margin-top: -0.3rem;
+      color: hsl(213, 96%, 18%, 0.8);
+      font-weight: 500;
+       }
+       .add-on-amount-4{
+        font-size: 20px;
+        color: var(--purplishBlue);
+       }
+  .ruler{
+    background: hsl(231, 11%, 63%, 0.2);
+    width: 90%;
+    height: 0.1rem;
+    margin-left: 20px;
+     
+  }
+  .service p{
+    color: var(--CoolGray);
+  }
+
+  .mini-plan-btn-2{
+    justify-content: space-between;
+    width: 76%;
+    margin-top: 7rem;
+    margin-left: 6.6rem;
+    display: flex;
+  }
+  
+  .mini-plan-btn-2 .planButton-2{
+    color: var(--White);
+    background-color: var(--marineblue);
+  }
+
+
+ /******************************************
+  The css for thank you stage begins here 
+  ********************************************/
+
+  .thankyou-level{
+       margin-top: 9rem;
+       /* margin-right: auto; */
+       text-align: center;
+  padding: 15px;
+  }
+  .thankyou-level img{
+    padding-bottom: 21px;
+  }
+  .thankyou-level p{
+    color: var(--CoolGray);
+    font-size: 17px;
+  }
+
+  .thankyou-level h4{
+    color: var(--marineblue);
+    font-weight: 700;
+  }
+
+
+  /******************************************
+          All media queries begins here
+  ********************************************/
+  @media screen and (max-width:375px){
+    .btnDisplay{
+      display: none;
+    }
+      
+    
+    .Main-form {
+      width: 100%;
+      flex-direction: column;
+      background: hsl(212, 45%, 89%);
+      
+  }
+  .form-Page {
+    width: 340px;
+  background: var(--White);
+  border-radius: 10px;
+  margin-top: -4rem;
+  padding: 20px;
+  height: 490px;
+  }
+
+    .Personal-Info-details {
+      /* margin-top: 2rem; */
+     margin-left: 0rem}
+
+
+     #mobileBtn {    
+      margin-top: 9.5rem;
+      margin-left: 13rem;
+      position: absolute;
+      
+    }
+    .btnDisplay-2{
+      display: block;
+      }
+
+
+  .siderBar {
+    background-image: url(assets/images/bg-sidebar-mobile.svg);
+    background-size: initial;
+    background-position: initial;
+    height: 30vh;
+    
+    width: 108%;}
+
+    .parent-Circle {
+      /* margin-top: 1rem; */
+      display: flex;
+      margin-left: 4.3rem;
+      margin-top: 9px;
+    }  
+
+    .info-steps {
+    
+      display: none;}
+
+
+      .circle-main {
+        margin-left: 0rem;
+       }
+       
+
+.biodata-form-page h3 {margin-left: -0.8rem; margin-top: 13px;}
+.biodata-form-page p {margin-left: -0.8rem; width: 85%;}
+.Personal-Info-details .control-input {width: 95%;}
+
+
+.attribution {display: none;}
+
+.formBackground{ 
+  background: var(--White);
+  margin-top: 4rem;
+  position: absolute;
+  margin-left: -2.2rem;
+  width: 23.2rem;
+  height: 60px; 
+   top: 39rem;
+}
+.validate{font-size: 12px; margin-top: 2.9rem; margin-left: 9rem;}
+
+.validate-2 {font-size: 12px; margin-top: 2.9rem; margin-left: 6rem;}
+
+
+
+
+ /******************************************
+  CCS media queries MINI PLAN begins here
+  ********************************************/
+  .Mini-plan {
+   flex-direction: column;
+   gap: 10px;
+   margin-left: 0rem;
+}
+
+.plan-1, .plan-2, .plan-3 {
+  display: flex;
+  gap: 10px;
+  width: 134%;
+    height: 5rem;
+}
+
+.plan-selection {margin-top: 0.4rem;}
+
+
+
+.button-switch {width: 100%; margin-left: 0rem}
+
+.buttonSwitchDisplay{
+  display: none;
+ }
+
+.buttonSwitchDisplayB{
+  display: block;
+ }
+
+ .switchB{
+  position: relative;
+  background-color: var(--marineblue);
+  width: 10%;
+  /* padding: 10px; */
+margin-top: 7px;
+  border-radius: 10px;
+  height: 50%;
+cursor: pointer;}
+
+  .switchB::after{
+    position: absolute;
+    content: " ";
+    /* padding: 10px; */
+    top: 2px;
+    left: var(--mobile-value, 4px);
+     /* left: 16px; */
+    /* margin-bottom: 1rem; */
+    /* margin: 4px; */
+    width: 35%;
+    background-color: var(--Magnolia);
+    height: 80%;
+    border-radius: 50%;
+  }
+  .monthlyB{
+    color: var(--marineblue);
+    font-weight: 500;
+  }
+
+   .yearlyB{
+    color: var(--CoolGray);
+    font-weight: 500;
+  }
+
+
+  .mini-plan-btn,  .mini-plan-btn-2 {
+    justify-content: unset;
+    width: 130%;
+    margin-top: 7rem;
+    margin-left: -3rem;
+    padding: 10px;
+    background: white;
+   
+}
+.mini-plan-btn .planButton-2, .mini-plan-btn-2 .planButton-2 {
+  margin-left: 11.3rem;
+  padding: 1.5%;}
+
+  .pick-add-ons {
+    margin-left: 0rem;
+    margin-top: 2rem;
+}
+.Add-ons-box-1 {
+  padding: 10px;
+  width: 100%;}
+  .add-on-level-1 {
+    margin-left: -2rem;
+    margin-top: 10px;
+}
+
+.add-on-level-1  p{
+  font-size: 12px;
+  width: 130%;
+  margin-top: -4px;
+}
+
+.add-on-level-1  h6{
+  /* font-size: 14px; */
+  /* width: 130%; */
+  color: var(--marineblue);
+}
+#Customizable  h6{
+      /* font-size: 14px; */
+      width: 130%;
+      /* color: var(--marineblue); */
+}
+
+#largeStorage {
+  margin-left: -3.1rem;
+}
+
+#Customizable {
+  margin-left: -1.8rem;
+}
+
+.form-check {
+  margin-top: 5px;}
+
+.add-on-amount {  margin-top: 13px;}
+
+#addOnP{
+  width: 93%;
+}
+
+  }
