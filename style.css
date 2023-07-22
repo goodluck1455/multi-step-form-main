@@ -216,18 +216,23 @@ body{
 
  .display-one{
   display: none;
+  animation: click-wave 0.6s ease-in-out;
  }
  .display-two{
   display: none;
+  animation: click-wave 0.6s ease-in-out;
  }
  .display-three{
   display: block;
+  /* animation: click-wave 0.6s ease-in-out; */
  }
  .display-four{
   display: none;
+  animation: click-wave 0.6s ease-in-out;
  }
  .display-five{
   display: none;
+  animation: click-wave 0.6s ease-in-out;
  }
 
  /******************************************
@@ -550,12 +555,33 @@ cursor: pointer;}
     color: var(--marineblue);
     font-weight: 700;
   }
-
+#backimage{
+  display: none;
+}
 
   /******************************************
           All media queries begins here
   ********************************************/
+  @media screen and (max-width:768px){
+    .Main-form {width: 100%;}
 
+
+    .siderBar {
+      background-image: none;
+      background-size: unset;
+      background-position: unset;}
+
+      .display-three {
+        margin-top: -4rem;
+        margin-left: -4rem;
+    }
+    #backimage{
+    display: block;
+    position: absolute;
+    z-index: -1;
+    }
+
+  }
 
 
 
@@ -800,5 +826,6 @@ cursor: pointer;}
 #stuborn-btn{margin-top: 13rem;}
 
 #stuborn-btn-2{margin-top: 13.6rem;}
+.mini-plan-btn, .mini-plan-btn-2 {width: 127%;}
 
     }
