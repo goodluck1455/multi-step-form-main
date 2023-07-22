@@ -715,7 +715,7 @@ cursor: pointer;}
    
 }
 .mini-plan-btn .planButton-2, .mini-plan-btn-2 .planButton-2 {
-  margin-left: 11.3rem;
+  margin-left: 10rem;
   padding: 1.5%;}
 
   .pick-add-ons {
@@ -762,6 +762,13 @@ cursor: pointer;}
 
 #addOnP{
   width: 93%;
+}
+
+
+
+.planButton-1 {
+  
+  margin-left: 0.5rem;
 }
 
   }
