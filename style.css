@@ -555,6 +555,17 @@ cursor: pointer;}
   /******************************************
           All media queries begins here
   ********************************************/
+
+
+
+
+
+
+
+ /******************************************
+  CCS media queries  width 357PX
+  ********************************************/
+
   @media screen and (max-width:375px){
     .btnDisplay{
       display: none;
@@ -772,3 +783,22 @@ cursor: pointer;}
 }
 
   }
+
+
+ /******************************************
+  CCS media queries  width 360PX
+  ********************************************/
+
+    @media screen and (max-width:360px){
+#mobileBtn {margin-top: 11rem;}
+
+.form-Page { margin-top: -8.2rem;}
+
+.mini-plan-btn, .mini-plan-btn-2 {margin-top: 10rem;}
+
+
+#stuborn-btn{margin-top: 13rem;}
+
+#stuborn-btn-2{margin-top: 13.6rem;}
+
+    }
