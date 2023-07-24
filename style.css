@@ -562,7 +562,44 @@ cursor: pointer;}
   /******************************************
           All media queries begins here
   ********************************************/
-  @media screen and (max-width:768px){
+ 
+
+
+
+
+
+
+ /******************************************
+  CCS media queries  width 1024PX
+  ********************************************/
+
+ @media screen and (max-width:1024px){
+.siderBar {
+    background-size: unset;
+    border-radius: 10px;
+  width: 50%;
+  }
+
+.display-one, .display-two, .display-three, .display-four {margin-left: -4.4rem;}
+
+.parent-Circle {margin-left: -1.5rem;}
+
+.form-check{
+margin-right: 27px;
+}
+
+.Mini-plan {
+    justify-content: space-evenly;
+    width: 80%;
+    margin-left: 6rem;
+ }
+ }
+
+ /******************************************
+  CCS media queries  width 768PX
+  ********************************************/
+
+ @media screen and (max-width:768px){
     .Main-form {width: 100%;}
 
 
@@ -586,11 +623,10 @@ cursor: pointer;}
 
 
 
-
-
  /******************************************
   CCS media queries  width 357PX
   ********************************************/
+
 
   @media screen and (max-width:375px){
     .btnDisplay{
@@ -610,7 +646,7 @@ cursor: pointer;}
       
   }
 
-  .display-three {
+    .display-one, .display-two, .display-three, .display-four {
     margin-top: 0rem;
      margin-left: 0rem;
 }
@@ -618,7 +654,7 @@ cursor: pointer;}
     width: 340px;
   background: var(--White);
   border-radius: 10px;
-  margin-top: -7.2rem;
+  margin-top: -3.2rem;
   padding: 20px;
   height: 490px;
   }
@@ -645,7 +681,9 @@ cursor: pointer;}
     background-position: initial;
     height: 30vh;
     margin-top: -1rem;
-    width: 108%;}
+    width: 108%;
+  border-radius: 0px;
+  }
 
     .parent-Circle {
       /* margin-top: 1rem; */
@@ -694,6 +732,7 @@ cursor: pointer;}
    flex-direction: column;
    gap: 10px;
    margin-left: 0rem;
+   width: 75%
 }
 
 .plan-1, .plan-2, .plan-3 {
@@ -802,7 +841,7 @@ cursor: pointer;}
 }
 
 #largeStorage {
-  margin-left: -3.1rem;
+  margin-left: -4rem;
 }
 
 #Customizable {
@@ -810,6 +849,7 @@ cursor: pointer;}
 }
 
 .form-check {
+      margin-right: 0px;
   margin-top: 5px;}
 
 .add-on-amount {  margin-top: 13px;}
