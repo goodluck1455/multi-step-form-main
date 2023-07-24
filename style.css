@@ -215,7 +215,7 @@ body{
 
 
  .display-one{
-  display: none;
+  display: block;
   animation: click-wave 0.6s ease-in-out;
  }
  .display-two{
@@ -223,7 +223,7 @@ body{
   animation: click-wave 0.6s ease-in-out;
  }
  .display-three{
-  display: block;
+  display: none;
   /* animation: click-wave 0.6s ease-in-out; */
  }
  .display-four{
@@ -597,18 +597,28 @@ cursor: pointer;}
       display: none;
     }
       
-    
+    #backimage {
+    display: none;
+   
+}
+
+
     .Main-form {
       width: 100%;
       flex-direction: column;
       background: hsl(212, 45%, 89%);
       
   }
+
+  .display-three {
+    margin-top: 0rem;
+     margin-left: 0rem;
+}
   .form-Page {
     width: 340px;
   background: var(--White);
   border-radius: 10px;
-  margin-top: -5.2rem;
+  margin-top: -3.2rem;
   padding: 20px;
   height: 490px;
   }
@@ -619,7 +629,7 @@ cursor: pointer;}
 
 
      #mobileBtn {    
-      margin-top: 12rem;
+      margin-top: -3rem;
       margin-left: 13rem;
       position: absolute;
       
@@ -663,8 +673,8 @@ cursor: pointer;}
 
 .formBackground{ 
   background: var(--White);
-  margin-top: 4rem;
-  position: absolute;
+  margin-top: 5.1rem;
+  position: inherit;
   margin-left: -2.2rem;
   width: 23rem;
   height: 60px; 
@@ -741,11 +751,17 @@ cursor: pointer;}
     font-weight: 500;
   }
 
+.mini-plan-btn{
+ margin-top: 4rem;
+}
+.mini-plan-btn-2{
+  margin-top: 10.5rem;
+}
+
 
   .mini-plan-btn,  .mini-plan-btn-2 {
     justify-content: unset;
     width: 130%;
-    margin-top: 7rem;
     margin-left: -3rem;
     padding: 10px;
     background: white;
@@ -753,7 +769,8 @@ cursor: pointer;}
 }
 .mini-plan-btn .planButton-2, .mini-plan-btn-2 .planButton-2 {
   margin-left: 10rem;
-  padding: 1.5%;}
+  /* padding: 1.5%; */
+}
 
   .pick-add-ons {
     margin-left: 0rem;
@@ -808,6 +825,10 @@ cursor: pointer;}
   margin-left: 0.5rem;
 }
 
+
+#stuborn-btn{margin-top: 7rem;}
+
+
   }
 
 
@@ -816,16 +837,20 @@ cursor: pointer;}
   ********************************************/
 
     @media screen and (max-width:360px){
-#mobileBtn {margin-top: 11rem;}
+#mobileBtn {margin-top: -3rem;}
 
-.form-Page { margin-top: -8.2rem;}
+.form-Page { margin-top: -3.2rem;}
 
-.mini-plan-btn, .mini-plan-btn-2 {margin-top: 10rem;}
+.mini-plan-btn, .mini-plan-btn-2 {margin-top: 4rem; width: 127%;}
 
 
-#stuborn-btn{margin-top: 13rem;}
+#stuborn-btn{margin-top: 7rem;}
 
-#stuborn-btn-2{margin-top: 13.6rem;}
-.mini-plan-btn, .mini-plan-btn-2 {width: 127%;}
+#stuborn-btn-2{margin-top: 7rem;}
+
+.monthlyB, .yearlyB  {font-weight: 700;}
+
+
+.formBackground {position: inherit;}
 
     }
