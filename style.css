@@ -664,7 +664,7 @@ margin-right: 27px;
     width: 100%;}
     
     .add-on-level-1 {
-      margin-left: -8rem;
+      margin-left: -5rem;
       margin-top: 5px;
   }
   
@@ -677,7 +677,16 @@ margin-right: 27px;
   }
 
 
+  #largeStorage {
+    margin-left: -8rem;
+}
+#Customizable {
+  margin-left: -3.5rem;
+}
 
+#Customizable p{
+ width: 200%;
+}
 
 
   }
@@ -711,7 +720,7 @@ margin-right: 27px;
     width: 370px;
   background: var(--White);
   border-radius: 10px;
-  margin-top: -6rem;
+  margin-top: -10rem;
   padding: 20px;
   height: 525px;
   }
@@ -720,7 +729,7 @@ margin-right: 27px;
   .parent-Circle {
     /* margin-top: 1rem; */
     display: flex;
-    margin-left: 1rem;
+    margin-left: 2.5rem;
     margin-top: 24px;
   } 
 
@@ -749,10 +758,20 @@ margin-right: 27px;
 
     .attribution {margin-top: 3rem}
 
+    .circle-main {
+      margin-left: 1rem;
+  }
 
+  .Mini-plan {
+    
+    width: 94%;
+    margin-left: 4rem;
+   
+}
 
-
-
+.yearly-plan-section {
+  font-size: 13px;
+}
     
 
   }
@@ -789,7 +808,7 @@ margin-right: 27px;
     width: 340px;
   background: var(--White);
   border-radius: 10px;
-  margin-top: -3.2rem;
+  margin-top: -6.5rem;
   padding: 20px;
   height: 490px;
   }
@@ -1015,7 +1034,7 @@ cursor: pointer;}
     @media screen and (max-width:360px){
 #mobileBtn {margin-top: -3rem;}
 
-.form-Page { margin-top: -3.2rem;}
+.form-Page { margin-top: -6.2rem;}
 
 .mini-plan-btn, .mini-plan-btn-2 {margin-top: 4rem; width: 127%;}
 
@@ -1027,6 +1046,6 @@ cursor: pointer;}
 .monthlyB, .yearlyB  {font-weight: 700;}
 
 
-.formBackground {position: inherit;}
+.formBackground {position: inherit; width: 22.4rem;}
 
     }
