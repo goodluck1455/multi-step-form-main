@@ -717,10 +717,10 @@ margin-right: 27px;
   }
 
   .form-Page {
-    width: 370px;
+    width: 383px;
   background: var(--White);
   border-radius: 10px;
-  margin-top: -10rem;
+  margin-top: -15rem;
   padding: 20px;
   height: 525px;
   }
@@ -771,6 +771,12 @@ margin-right: 27px;
 
 .yearly-plan-section {
   font-size: 13px;
+}
+
+.mini-plan-btn {
+  margin-top: 5rem;
+  margin-left: 4rem;
+ 
 }
     
 
