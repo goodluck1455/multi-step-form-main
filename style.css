@@ -175,13 +175,21 @@ body{
   color: var(--marineblue)
  }
 
- .Personal-Info-details button, .Personal-Info-details button:hover{
+ .Personal-Info-details button{
     margin-top: 5rem;
     margin-left: 21rem;
     color: var(--White);
     background-color: var(--marineblue);
     z-index: 99;
     
+ }
+
+
+ .Personal-Info-details button:hover{
+  /* margin-top: 5rem; */
+    color: var(--White);
+    background-color: var(--marineblue);
+    z-index: 99;
  }
  /* *****************
  css for validating the form begins here 
@@ -606,7 +614,9 @@ margin-right: 27px;
     .siderBar {
       background-image: none;
       background-size: unset;
-      background-position: unset;}
+      background-position: unset;
+    height: auto;
+    }
 
       .display-three {
         margin-top: -0rem;
@@ -614,8 +624,8 @@ margin-right: 27px;
     }
     #backimage{
     display: block;
-    position: relative;
-    margin-top: -3rem;
+    /* position: relative; */
+    margin-top: -13rem;
     }
 
 
@@ -638,12 +648,36 @@ margin-right: 27px;
 }
 
 .btnDisplay{
-  display: none;
+  display: block;
 }
 
 .btnDisplay-2{
-  display: block;
+  display: none;
   }
+
+  .Add-ons-box-1 h6{
+    font-size: 18px;
+  }
+
+  .Add-ons-box-1 {
+    padding: 10px;
+    width: 100%;}
+    
+    .add-on-level-1 {
+      margin-left: -8rem;
+      margin-top: 5px;
+  }
+  
+ 
+  
+  .add-on-level-1  h6{
+    
+    /* width: 130%; */
+    color: var(--marineblue);
+  }
+
+
+
 
 
   }
@@ -714,6 +748,12 @@ margin-right: 27px;
     }
 
     .attribution {margin-top: 3rem}
+
+
+
+
+
+    
 
   }
 
@@ -913,6 +953,7 @@ cursor: pointer;}
 .Add-ons-box-1 {
   padding: 10px;
   width: 100%;}
+
   .add-on-level-1 {
     margin-left: -2rem;
     margin-top: 10px;
