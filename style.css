@@ -609,18 +609,113 @@ margin-right: 27px;
       background-position: unset;}
 
       .display-three {
-        margin-top: -4rem;
+        margin-top: -0rem;
         margin-left: -4rem;
     }
     #backimage{
     display: block;
-    position: absolute;
-    z-index: -1;
+    position: relative;
+    margin-top: -3rem;
     }
+
+
+    .parent-Circle {
+      margin-left: 0rem;
+      margin-top: -32rem;
+      position: relative;
+  }
+
+  .Personal-Info-details button{
+    margin-left: 14rem;
+  }
+
+
+  .Mini-plan {
+    justify-content: start;
+    width: 88%;
+    margin-left: 6rem;
+    gap: 10px;
+}
+
+.btnDisplay{
+  display: none;
+}
+
+.btnDisplay-2{
+  display: block;
+  }
+
 
   }
 
 
+
+
+  /******************************************
+          CSS media queries  width 414PX
+  ********************************************/
+
+  @media screen and (max-width:414px){
+
+    .Main-form {flex-direction: column; background: none;}
+
+    #backimage {
+      display: none;
+  }
+
+  .siderBar {
+    background-image: url(assets/images/bg-sidebar-mobile.svg);
+    background-size: contain;
+    background-position: inherit;
+    height: 40vh;
+    margin-top: -1rem;
+    width: 106%;
+  border-radius: 0px;
+  }
+
+  .form-Page {
+    width: 370px;
+  background: var(--White);
+  border-radius: 10px;
+  margin-top: -6rem;
+  padding: 20px;
+  height: 525px;
+  }
+
+
+  .parent-Circle {
+    /* margin-top: 1rem; */
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 24px;
+  } 
+
+
+  .info-steps {
+    
+    display: none;}
+
+    .Personal-Info-details {margin-left: 5rem;}
+    .Personal-Info-details .control-input {width: 95%;}
+    .Personal-Info-details button {margin-left: 13rem; margin-top: 0rem;}
+
+    .biodata-form-page h3 {
+      margin-top: 0.5rem;
+      margin-left: 4rem;
+  }
+  .biodata-form-page p {margin-left: 4rem;}
+
+  .btnDisplay{
+    display: none;
+  }
+
+  .btnDisplay-2{
+    display: block;
+    }
+
+    .attribution {margin-top: 3rem}
+
+  }
 
 
  /******************************************
