@@ -583,9 +583,21 @@ cursor: pointer;}
 
  @media screen and (max-width:1024px){
 .siderBar {
-    background-size: unset;
-    border-radius: 10px;
-  width: 50%;
+     background-image: none;
+      background-size: unset;
+      background-position: unset;
+      height: auto;
+  }
+
+  .parent-Circle {
+    margin-left: 0rem;
+    margin-top: -32rem;
+    position: relative;
+}
+
+  #backimage{
+    display: block;
+    margin-top: -13rem;
   }
 
 .display-one, .display-two, .display-three, .display-four {margin-left: -4.4rem;}
@@ -601,6 +613,9 @@ margin-right: 27px;
     width: 80%;
     margin-left: 6rem;
  }
+ .Main-form {width: 80%;}
+
+
  }
 
  /******************************************
@@ -615,7 +630,7 @@ margin-right: 27px;
       background-image: none;
       background-size: unset;
       background-position: unset;
-    height: auto;
+      height: auto;
     }
 
       .display-three {
