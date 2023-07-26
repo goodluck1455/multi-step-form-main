@@ -688,6 +688,8 @@ margin-right: 27px;
  width: 200%;
 }
 
+.switch {width: 9%;}
+
 
   }
 
@@ -746,7 +748,7 @@ margin-right: 27px;
       margin-top: 0.5rem;
       margin-left: 4rem;
   }
-  .biodata-form-page p {margin-left: 4rem;}
+  .biodata-form-page p {margin-left: 4.1rem;}
 
   .btnDisplay{
     display: none;
@@ -774,11 +776,37 @@ margin-right: 27px;
 }
 
 .mini-plan-btn {
-  margin-top: 5rem;
-  margin-left: 4rem;
- 
+  margin-top: 6rem;
+  margin-left: 3rem;
+  width: 86%;
 }
-    
+.monthly, .yearly {
+  font-weight: 700;
+}
+.switch {width: 9%;}
+.button-switch {width: 85%; margin-left: 4rem;}
+   #stuborn-btn{
+    margin-top: 4rem;
+   } 
+
+
+   .mini-plan-btn-2{
+    margin-top: 3rem;
+    margin-left: 5rem;
+   } 
+   .pick-add-ons {
+    margin-left: 4rem;
+}
+
+.add-on-level-1 {
+  margin-left: -3.5rem;}
+
+  #onlinepara{
+    width: 200%;}
+
+  #largeStorage {
+    margin-left: -6rem;
+}
 
   }
 
@@ -814,7 +842,7 @@ margin-right: 27px;
     width: 340px;
   background: var(--White);
   border-radius: 10px;
-  margin-top: -6.5rem;
+  margin-top: -10.5rem;
   padding: 20px;
   height: 490px;
   }
@@ -839,7 +867,7 @@ margin-right: 27px;
     background-image: url(assets/images/bg-sidebar-mobile.svg);
     background-size: initial;
     background-position: initial;
-    height: 30vh;
+    /* height: 30vh; */
     margin-top: -1rem;
     width: 108%;
   border-radius: 0px;
@@ -942,12 +970,12 @@ cursor: pointer;}
   }
   .monthlyB{
     color: var(--marineblue);
-    font-weight: 500;
+    font-weight: 700;
   }
 
    .yearlyB{
     color: var(--CoolGray);
-    font-weight: 500;
+    font-weight: 700;
   }
 
 .mini-plan-btn{
@@ -995,8 +1023,8 @@ cursor: pointer;}
   /* width: 130%; */
   color: var(--marineblue);
 }
-#Customizable  h6{
-      /* font-size: 14px; */
+.Add-ons-box-1 h6{
+      font-size: 17.2px;
       width: 130%;
       /* color: var(--marineblue); */
 }
@@ -1040,7 +1068,7 @@ cursor: pointer;}
     @media screen and (max-width:360px){
 #mobileBtn {margin-top: -3rem;}
 
-.form-Page { margin-top: -6.2rem;}
+.form-Page { margin-top: -12.2rem;}
 
 .mini-plan-btn, .mini-plan-btn-2 {margin-top: 4rem; width: 127%;}
 
@@ -1052,6 +1080,6 @@ cursor: pointer;}
 .monthlyB, .yearlyB  {font-weight: 700;}
 
 
-.formBackground {position: inherit; width: 22.4rem;}
+.formBackground {position: inherit; width: 22.4rem; margin-top: 9.5rem;}
 
     }
