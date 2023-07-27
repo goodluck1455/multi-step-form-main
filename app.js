@@ -22,7 +22,9 @@ let display_One = document.querySelector(".display-one");
 let display_Two = document.querySelector(".display-two");
 let display_Three = document.querySelector(".display-three");
 let display_four = document.querySelector(".display-four");
+let display_five = document.querySelector(".display-five");
 let returnAngle = document.querySelectorAll(".return-back-angle");
+let confirmBtn = document.querySelector("#confirmBtn");
 
 //variable decalaration for buttonSwitch
 let buttonSwitch = document.querySelector(".switch");
@@ -38,6 +40,7 @@ let onlineAmountUpdate = document.querySelectorAll(".onlineAmount");
 let serviceAmountUpdate = document.querySelectorAll(".serviceAmountUpdate");
 let selectedPlan = document.querySelectorAll(".selectedPlan");
 let planSelected = document.querySelector(".planSelected");
+
 
 
 
@@ -609,6 +612,66 @@ buttonSwitchB.addEventListener("click", function() {
 });
 
 
+
+
+
+
+
+confirmBtn.addEventListener("click", ()=>{
+  var computedStyleThree = window.getComputedStyle(display_four);
+
+ // console.log("it's working");
+
+  if (computedStyleThree.display === "block") {
+    if (computedStyleThree.opacity === "1") {
+      display_four.style.opacity = "0";
+      setTimeout(() => {
+        display_five.style.display = "block";
+
+       
+
+        setTimeout(() => {
+          display_five.style.opacity = "1";
+          display_four.style.display = "none";
+
+
+        //   circleIndicatorD.style.background = 'hsl(206, 94%, 87%)';
+        //  circleIndicatorD.style.border = '1px solid hsl(206, 94%, 87%)'; //lightBlue color
+        //   circleIndicatorD.style.color = 'hsl(213, 96%, 18%)';
+        //   circleIndicatorC.style.background = 'none';
+        //   circleIndicatorC.style.color = 'hsl(206, 94%, 87%)'; 
+        //   circleIndicatorC.style.border = '1px solid hsl(206, 94%, 87%)'; //lightBlue color
+
+
+          // onlineAmountUpdate.forEach(function(amount) {
+          //   if (amount.textContent.includes("/mo")) {
+          
+          //       serviceAmountUpdate.forEach((amount, index) => {
+          //       const textOptions = ["$9/mo", "+$1/mo", "+$2/mon", "+$12/mo"];
+          //       amount.innerHTML = textOptions[index];
+          //     });
+
+          //   } else {
+
+          //     serviceAmountUpdate.forEach((amount, index) => {
+          //       const textOptionB = ["$90/yr", "+$10/yr", "+$20/yr", "+$120/yr"];
+          //       amount.innerHTML = textOptionB[index];
+          //     });
+              // Do something if the PlanAmount does not have the specified value
+              // console.log(`The input does not contains the value '${amount}'`);
+          //   }
+          // });
+
+              
+         
+
+        }, 100);
+      }, 110);
+    }
+  }
+
+
+});
 
 
 

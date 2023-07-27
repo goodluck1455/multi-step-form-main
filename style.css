@@ -223,7 +223,7 @@ body{
 
 
  .display-one{
-  display: block;
+  display: none;
   animation: click-wave 0.6s ease-in-out;
  }
  .display-two{
@@ -239,7 +239,7 @@ body{
   animation: click-wave 0.6s ease-in-out;
  }
  .display-five{
-  display: none;
+  display: block;
   animation: click-wave 0.6s ease-in-out;
  }
 
@@ -567,6 +567,11 @@ cursor: pointer;}
   display: none;
 }
 
+
+.subscriptionConfirmationB{
+  display: none;
+}
+
   /******************************************
           All media queries begins here
   ********************************************/
@@ -614,6 +619,10 @@ margin-right: 27px;
     margin-left: 6rem;
  }
  .Main-form {width: 80%;}
+
+ .validate{margin-left: 15rem;}
+
+.validate-2 {margin-left: 11rem;}
 
 
  }
@@ -711,6 +720,72 @@ margin-right: 27px;
 
 
    @media screen and (max-width:540px){
+    .Main-form {flex-direction: column; background: none;}
+
+      .siderBar {
+    background-image: url(assets/images/bg-sidebar-mobile.svg);
+    background-size: contain;
+    background-position: inherit;
+    height: 40vh;
+    margin-top: -1rem;
+    width: 106%;
+  border-radius: 0px;
+  }
+
+    #backimage {
+      display: none;
+  }
+
+  .form-Page {
+    width: 490px;
+  background: var(--White);
+  border-radius: 10px;
+  margin-top: -10rem;
+  padding: 20px;
+  height: 525px;
+  }
+
+   .parent-Circle {
+    /* margin-top: 1rem; */
+    display: flex;
+    margin-left: 3.5rem;
+    margin-top: 24px;
+  } 
+
+ .info-steps {display: none;}
+ .Personal-Info-details button {margin-top: 0.8rem; margin-left: 16rem;}
+.circle-group {padding: 10px 15px;}
+
+
+.mini-plan-btn { margin-top: 4.5rem; margin-left: 4rem; width: 87%;}
+
+.display-three {margin-left: -6rem;}
+
+.Add-ons-box-1 {width: 90%;}
+
+
+.button-switch {width: 80%; margin-left: 6rem;}
+
+.monthly, .yearly {font-weight: 700;}
+
+.validate{margin-top: 2.9rem; margin-left: 11rem;}
+
+.validate-2 {margin-top: 2.9rem; margin-left: 7.2rem;}
+
+.Personal-Info-details {
+    margin-top: 1rem;}
+
+
+.planButton-1 { margin-left: 1rem;}
+.stuborn-btn{margin-top: 3rem; width: 80%;}
+.becareFul{margin-left: 3rem;}
+
+.stuborn-btn-2{width: 76%;
+    margin-top: 3rem;
+    margin-left: 5rem;}
+
+    .subscriptionConfirmationB{display: block;}
+    .subscriptionConfirmationB{display: none;}
 
 
    }
@@ -756,13 +831,11 @@ margin-right: 27px;
   } 
 
 
-  .info-steps {
-    
-    display: none;}
+  .info-steps {display: none;}
 
     .Personal-Info-details {margin-left: 5rem;}
     .Personal-Info-details .control-input {width: 95%;}
-    .Personal-Info-details button {margin-left: 13rem; margin-top: 0rem;}
+    .Personal-Info-details button {margin-left: 13rem; margin-top: 1rem;}
 
     .biodata-form-page h3 {
       margin-top: 0.5rem;
@@ -828,6 +901,20 @@ margin-right: 27px;
     margin-left: -6rem;
 }
 
+
+.validate{font-size: 12px; margin-top: 2.9rem; margin-left: 11rem;}
+
+.validate-2 {font-size: 12px; margin-top: 2.9rem; margin-left: 7.5rem;}
+
+
+.display-three {margin-left: -4rem;}
+.Add-ons-box-1 {width: 100%;}
+
+.planButton-1 {
+  margin-left: 0rem;
+}
+.becareFul {margin-left: 0.6rem;}
+
   }
 
 
@@ -836,6 +923,10 @@ margin-right: 27px;
   ********************************************/
 @media screen and (max-width:411px){
 .form-Page {margin-top: -11rem;}
+
+.Add-ons-box-1 {width: 100%;}
+
+.display-three {margin-left: -4rem;}
 
 }
 
@@ -929,7 +1020,7 @@ margin-right: 27px;
 
 .formBackground{ 
   background: var(--White);
-  margin-top: 5.1rem;
+  margin-top: 6.2rem;
   position: inherit;
   margin-left: -2.2rem;
   width: 23rem;
@@ -1088,6 +1179,26 @@ cursor: pointer;}
 #stuborn-btn{margin-top: 7rem;}
 
 
+.Add-ons-box-2 {width: 100%;}
+/* .serviceAmountUpdate{margin-left: 1rem;} */
+.Add-ons-checkbox-4 {
+    width: 104%;}
+
+
+    .thankyou-level {margin-top: 4rem;}
+
+    .subscriptionConfirmationB{
+      display: block;
+    }
+    .subscriptionConfirmationA{
+      display: none;
+    }
+
+    .nawaForu{
+width: 100%;
+    }
+
+
   }
 
 
@@ -1131,7 +1242,7 @@ cursor: pointer;}
 #largeStorage {margin-left: -2rem;}
 .planButton-1 {margin-left: 1rem;}
 .Add-ons-box-2 {width: 100%;}
-.serviceAmountUpdate{margin-left: 1rem;}
+/* .serviceAmountUpdate{margin-left: 1rem;} */
 .Add-ons-checkbox-4 {
     width: 104%;}
 
