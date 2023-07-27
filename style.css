@@ -710,6 +710,11 @@ margin-right: 27px;
 
 
 
+   @media screen and (max-width:540px){
+
+
+   }
+
 
   /******************************************
           CSS media queries  width 414PX
@@ -827,9 +832,19 @@ margin-right: 27px;
 
 
  /******************************************
+  CCS media queries  width 411PX
+  ********************************************/
+@media screen and (max-width:411px){
+.form-Page {margin-top: -11rem;}
+
+}
+
+
+
+
+ /******************************************
   CCS media queries  width 357PX
   ********************************************/
-
 
   @media screen and (max-width:375px){
     .btnDisplay{
@@ -1085,12 +1100,12 @@ cursor: pointer;}
 
 .form-Page { margin-top: -12.2rem;}
 
-.mini-plan-btn, .mini-plan-btn-2 {margin-top: 4rem; width: 127%;}
+.mini-plan-btn, .mini-plan-btn-2 {margin-top: 8rem; width: 127%;}
 
 
-#stuborn-btn{margin-top: 7rem;}
+#stuborn-btn{margin-top: 12rem;}
 
-#stuborn-btn-2{margin-top: 7rem;}
+#stuborn-btn-2{margin-top: 12rem;}
 
 .monthlyB, .yearlyB  {font-weight: 700;}
 
@@ -1098,3 +1113,26 @@ cursor: pointer;}
 .formBackground {position: inherit; width: 22.4rem; margin-top: 9.5rem;}
 
     }
+
+
+
+    @media screen and (max-width:320px){
+
+.form-Page {margin-top: -3.2rem; width: 310px;}
+.formBackground {width: 21rem; margin-top: 5rem;}
+#mobileBtn {margin-left: 11rem;}
+.siderBar {height: 21vh;}
+
+.parent-Circle {margin-left: 3.4rem}
+
+.mini-plan-btn .planButton-2, .mini-plan-btn-2 .planButton-2 {
+    margin-left: 7rem;
+}
+#largeStorage {margin-left: -2rem;}
+.planButton-1 {margin-left: 1rem;}
+.Add-ons-box-2 {width: 100%;}
+.serviceAmountUpdate{margin-left: 1rem;}
+.Add-ons-checkbox-4 {
+    width: 104%;}
+
+}
