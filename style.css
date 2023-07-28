@@ -595,7 +595,7 @@ cursor: pointer;}
   }
 
   .parent-Circle {
-    margin-left: 0rem;
+    margin-left: 1rem;
     margin-top: -32rem;
     position: relative;
 }
@@ -607,7 +607,7 @@ cursor: pointer;}
 
 .display-one, .display-two, .display-three, .display-four {margin-left: -4.4rem;}
 
-.parent-Circle {margin-left: -1.5rem;}
+
 
 .form-check{
 margin-right: 27px;
@@ -626,6 +626,18 @@ margin-right: 27px;
 
 
  }
+
+
+ @media screen and (max-width:912px){
+.Personal-Info-details button {
+    margin-top: 3rem;
+    margin-left: 14rem;}
+
+    .Main-form {width: 86%;}
+
+ }
+
+
 
  /******************************************
   CCS media queries  width 768PX
