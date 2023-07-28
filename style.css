@@ -731,6 +731,14 @@ margin-right: 27px;
 
 
 
+  @media screen and (max-width:731px){
+    .Main-form {
+      width: 97%;
+  }
+  }
+
+
+
    @media screen and (max-width:540px){
     .Main-form {flex-direction: column; background: none;}
 
@@ -934,7 +942,7 @@ margin-right: 27px;
   CCS media queries  width 411PX
   ********************************************/
 @media screen and (max-width:411px){
-.form-Page {margin-top: -11rem;}
+.form-Page {margin-top: -5rem;}
 
 .Add-ons-box-1 {width: 100%;}
 
