@@ -738,6 +738,35 @@ margin-right: 27px;
   }
 
 
+  @media screen and (max-width:667px){
+    .Main-form {
+      width: 100%;
+  }
+
+  .display-two{
+    margin-left: -5rem;
+  }
+
+
+  .Mini-plan {width: 85%;}
+
+  .pick-add-ons {margin-left: 5rem;}
+  
+  .yearly-plan-section {font-size: 13.9px;}
+
+  .button-switch {width: 78%; margin-left: 6rem;}
+
+  .mini-plan-btn {
+    width: 78%;
+    margin-top: 7rem;
+    margin-left: 5rem}
+
+
+
+
+  }
+
+
 
    @media screen and (max-width:540px){
     .Main-form {flex-direction: column; background: none;}
@@ -809,6 +838,11 @@ margin-right: 27px;
 
 
    }
+
+
+
+
+
 
 
   /******************************************
