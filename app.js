@@ -512,8 +512,10 @@ planElements.forEach((element) => {
   element.addEventListener("click", () => {
     planElements.forEach((plan) => {
       plan.classList.remove("active");
+     
     });
     element.classList.add("active");
+    nextStepButton.disabled = false;
   });
 });
 
