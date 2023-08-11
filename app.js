@@ -505,6 +505,8 @@ planElements.forEach(function (planElement) {
     // });
 
     // });
+    warningForPlan.style.display = "none";
+    nextStepButton.disabled = false;
   });
 });
 
@@ -515,7 +517,7 @@ planElements.forEach((element) => {
      
     });
     element.classList.add("active");
-    nextStepButton.disabled = false;
+    // nextStepButton.disabled = false;
   });
 });
 
@@ -523,6 +525,7 @@ planElements.forEach((element) => {
 
 
 //button switch for nobile deveice use
+let warningForPlan = document.querySelector(".warning_ForPlan");
 buttonSwitchB.addEventListener("click", function () {
   const screenWidth = window.innerWidth;
   var switchElement = document.querySelector(".switchB");
@@ -535,6 +538,7 @@ buttonSwitchB.addEventListener("click", function () {
     yearlyPlanSection.forEach(function (element) {
       element.innerHTML = "2 months free";
       nextStepButton.disabled = true;
+      warningForPlan.textContent = "Please select your monthly plan";
     });
     marginForPlanSection.forEach((margin) => {
       margin.style.marginTop = "-0.2rem";

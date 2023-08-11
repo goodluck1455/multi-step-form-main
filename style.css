@@ -53,6 +53,19 @@ body{
     background-color: hsl(212, 45%, 89%);
 }
 
+.warning_ForPlan{
+  position: absolute;
+  /* margin: auto; */
+  left: 55%;
+  top: 21%;
+  color: var(--White);
+  background: var(--StrawberryRed);
+  transition: 5s ease;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+
 .attribution { font-size: 11px; text-align: center;  margin-top: 1rem;}
 .attribution a { color: hsl(228, 45%, 44%); }
 
