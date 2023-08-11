@@ -115,7 +115,7 @@
               <img src="assets/images/icon-arcade.svg" alt="" srcset="">
             
 
-              <div class="plan-selection" onclick="toggleActive(this)">
+              <div class="plan-selection">
                 <h6 class="selectedPlan">Arcade</h6>
                 <p class="plan-amount">$9/mo</p>
                 <span class="yearly-plan-section"><!--2 months free--></span>
@@ -155,7 +155,7 @@
 
           <div class="mini-plan-btn container-fluid">
             <button type="submit" class="btn planButton-1 return-back-angle">Go Back</button>
-            <button type="submit" class="btn planButton-2" id="pickAddons">Next Step</button>
+            <button type="submit" class="btn planButton-2" id="pickAddons" >Next Step</button>
           </div>
         </div> <!--------  display two  ends here --- -->
           
@@ -171,7 +171,7 @@
             <div class="Add-ons-box-1">
               <div class="Add-ons-checkbox">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  <input class="form-check-input formIputA" type="checkbox" value="" id="flexCheckChecked">
                   <label class="form-check-label" for="flexCheckChecked">
                     <!-- Checked checkbox -->
                   </label>
@@ -179,11 +179,11 @@
 
               </div>
               <div class="add-on-level-1">
-                <h6>Online service</h6>
-                <p id="onlinepara">Acess to multiplayer games</p>
+                <h6 class="pickOnSelected formtextContentA">Online service</h6>
+                <p class="pickOnParagra"  id="onlinepara">Acess to multiplayer games</p>
               </div>
               <div class="add-on-amount">
-                <p class="onlineAmount">+$1/mon</p>
+                <p class="onlineAmount AmountTextContentA">+$1/mon</p>
               </div>
             </div>
 
@@ -197,7 +197,7 @@
               <div class="Add-ons-checkbox">
               
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <input class="form-check-input formIputB" type="checkbox" value="" id="flexCheckChecked">
                 <label class="form-check-label" for="flexCheckChecked">
                   <!-- Checked checkbox -->
                 </label>
@@ -207,11 +207,11 @@
 
               </div>
               <div class="add-on-level-1" id="largeStorage">
-                <h6>Larger storage</h6>
-                <p>Extra 1TB cloud save</p>
+                <h6 class="pickOnSelected formtextContentB">Larger storage</h6>
+                <p class="pickOnParagra">Extra 1TB cloud save</p>
               </div>
               <div class="add-on-amount">
-                <p class="onlineAmount">+$1/mon</p>
+                <p class="onlineAmount AmountTextContentB">+$1/mon</p>
               </div>
             </div>
 
@@ -219,7 +219,7 @@
               <div class="Add-ons-checkbox">
 
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  <input class="form-check-input formIputC" type="checkbox" value="" id="flexCheckChecked">
                   <label class="form-check-label" for="flexCheckChecked">
                     <!-- Checked checkbox -->
                   </label>
@@ -227,11 +227,11 @@
 
               </div>
               <div class="add-on-level-1" id="Customizable">
-                <h6>Customizable profile</h6>
-                <p>Custom theme on your profile</p>
+                <h6 class="pickOnSelected formtextContentC">Customizable profile</h6>
+                <p class="pickOnParagra">Custom theme on your profile</p>
               </div>
               <div class="add-on-amount">
-                <p class="onlineAmount">+$1/mon</p>
+                <p class="onlineAmount AmountTextContentC">+$1/mon</p>
               </div>
             </div>
            
@@ -268,15 +268,15 @@
               </div>
               <div>
                 <div class="add-on-amount-2">
-                  <p class="serviceAmountUpdate">$9/mo</p>
+                  <p class="serviceAmountUpdate planAmount">$9/mo</p>
                 </div>
               </div>
 
             </div>
             <div class="ruler"></div>
-            <div class="Add-ons-checkbox-2 ">
+            <div class="Add-ons-checkbox-2 addSelectedService">
 
-              <div class="add-on-level-2 service">
+              <!-- <div class="add-on-level-2 service">
                 <p class="OnlineServiceSelected">Online service</p>
                
               </div>
@@ -284,13 +284,13 @@
                 <div class="add-on-amount-3">
                   <p class="serviceAmountUpdate">+$1/mo</p>
                 </div>
-              </div>
+              </div> -->
 
             </div>
 
-            <div class="Add-ons-checkbox-3 ">
+            <div class="Add-ons-checkbox-3 addSelectedServiceA">
 
-              <div class="add-on-level-2 service">
+              <!-- <div class="add-on-level-2 service">
                 <p class="OnlineServiceSelected">Large storage</p>
                
               </div>
@@ -298,7 +298,21 @@
                 <div class="add-on-amount-3">
                   <p class="serviceAmountUpdate">+$2/mo</p>
                 </div>
+              </div> -->
+
+            </div>
+
+            <div class="Add-ons-checkbox-3 addSelectedServiceB">
+
+              <!-- <div class="add-on-level-2 service">
+                <p class="OnlineServiceSelected">Large storage</p>
+               
               </div>
+              <div>
+                <div class="add-on-amount-3">
+                  <p class="serviceAmountUpdate">+$2/mo</p>
+                </div>
+              </div> -->
 
             </div>
             
@@ -311,7 +325,7 @@
             </div>
             <div>
               <div class="add-on-amount-4">
-                <p class="serviceAmountUpdate">+$12/mo</p>
+                <p class="totalAmountCalculated">+$12/mo</p>
               </div>
             </div>
 
