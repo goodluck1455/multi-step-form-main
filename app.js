@@ -216,6 +216,9 @@ buttonSwitch.addEventListener("click", function () {
     switchElement.style.setProperty("--left-value", "16px");
     monthlySwitch.style.color = "hsl(231, 11%, 63%)";
     yearlySwitch.style.color = "hsl(213, 96%, 18%)";
+    warningForPlan.style.display = "block";
+    warningForPlan.innerHTML = "Please select your Yearly plan";
+    nextStepButton.disabled = true;
     yearlyPlanSection.forEach(function (element) {
       element.innerHTML = "2 months free";
     });
@@ -227,6 +230,8 @@ buttonSwitch.addEventListener("click", function () {
       amount.innerHTML = textOptions[index];
     });
 
+   
+
     // if (screenWidth <= 375) {
     //   marginForPlanSection.forEach((margin) => {
     //     margin.style.marginTop = "0.4rem";
@@ -236,6 +241,10 @@ buttonSwitch.addEventListener("click", function () {
     switchElement.style.setProperty("--left-value", "4px");
     monthlySwitch.style.color = "hsl(213, 96%, 18%)";
     yearlySwitch.style.color = "hsl(231, 11%, 63%)";
+    warningForPlan.style.display = "block";
+    warningForPlan.innerHTML = "Please select your Monthly plan";
+    nextStepButton.disabled = true;
+
     yearlyPlanSection.forEach(function (element) {
       element.innerHTML = "";
     });
@@ -248,6 +257,8 @@ buttonSwitch.addEventListener("click", function () {
       amount.innerHTML = textOptions[index];
     });
 
+
+  
     // if (screenWidth <= 375) {
     //   marginForPlanSection.forEach((margin) => {
     //     margin.style.marginTop = "0.4rem";
@@ -514,15 +525,11 @@ planElements.forEach((element) => {
   element.addEventListener("click", () => {
     planElements.forEach((plan) => {
       plan.classList.remove("active");
-     
     });
     element.classList.add("active");
     // nextStepButton.disabled = false;
   });
 });
-
-
-
 
 //button switch for nobile deveice use
 let warningForPlan = document.querySelector(".warning_ForPlan");
@@ -530,15 +537,17 @@ buttonSwitchB.addEventListener("click", function () {
   const screenWidth = window.innerWidth;
   var switchElement = document.querySelector(".switchB");
   var mainSwitch = window.getComputedStyle(switchElement, "::after");
-
+  warningForPlan.innerHTML = "Please select your Yearly plan";
+  nextStepButton.disabled = true;
   if (mainSwitch.getPropertyValue("left") === "4px") {
     switchElement.style.setProperty("--mobile-value", "16px");
     monthlySwitchB.style.color = "hsl(231, 11%, 63%)";
     yearlySwitchB.style.color = "hsl(213, 96%, 18%)";
+   
     yearlyPlanSection.forEach(function (element) {
       element.innerHTML = "2 months free";
-      nextStepButton.disabled = true;
-      warningForPlan.textContent = "Please select your monthly plan";
+     
+      
     });
     marginForPlanSection.forEach((margin) => {
       margin.style.marginTop = "-0.2rem";
@@ -558,8 +567,11 @@ buttonSwitchB.addEventListener("click", function () {
     switchElement.style.setProperty("--mobile-value", "4px");
     monthlySwitchB.style.color = "hsl(213, 96%, 18%)";
     yearlySwitchB.style.color = "hsl(231, 11%, 63%)";
+    nextStepButton.disabled = true;
+    warningForPlan.innerHTML = "Please select your Monthly plan";
     yearlyPlanSection.forEach(function (element) {
       element.innerHTML = "";
+    
     });
     marginForPlanSection.forEach((margin) => {
       margin.style.marginTop = "0.4rem";
@@ -576,10 +588,7 @@ buttonSwitchB.addEventListener("click", function () {
     //   });
     // }
   }
-
 });
-
-
 
 // function resetEventListener() {
 //   planElements.forEach((element) => {
@@ -679,10 +688,8 @@ formIputB.addEventListener("change", () => {
 let AmountTextContentC = document.querySelector(".AmountTextContentC");
 let formIputC = document.querySelector(".formIputC");
 let addSelectedServiceB = document.querySelector(".addSelectedServiceB");
- let formtextContentC = document.querySelector(".formtextContentC");
+let formtextContentC = document.querySelector(".formtextContentC");
 formIputC.addEventListener("change", () => {
- 
-
   let onlineTextContent = formtextContentC.textContent;
   let Amountcontent = AmountTextContentC.textContent;
 
@@ -713,25 +720,25 @@ function extractNumbers(str) {
   return numbers ? parseInt(numbers[0]) : 0; //Convert the first found number to integer, or 0 if none found
 }
 
-
- let totalAmountCalculated = document.querySelector(".totalAmountCalculated");
-  let planAmountA = document.querySelector(".planAmount");
-      let numberD = 0;
-        let sum = 0;
+let totalAmountCalculated = document.querySelector(".totalAmountCalculated");
+let planAmountA = document.querySelector(".planAmount");
+let numberD = 0;
+let sum = 0;
 function calculateSum() {
   let sum = 0;
   let numberA = 0;
   let numberB = 0;
   let numberC = 0;
 
-
   if (formIputA.checked) {
     numberA = extractNumbers(AmountTextContentA.textContent);
     sum += numberA;
-  }  if (formIputB.checked) {
+  }
+  if (formIputB.checked) {
     numberB = extractNumbers(AmountTextContentB.textContent);
     sum += numberB;
-  }  if (formIputC.checked) {
+  }
+  if (formIputC.checked) {
     numberC = extractNumbers(AmountTextContentC.textContent);
     sum += numberC;
   }
@@ -747,42 +754,28 @@ function calculateSum() {
   //   numberD = extractNumbers(planAmountA.textContent);
   //   sum += numberD;
   //   totalAmountCalculated.textContent = `+$${sum}/yr`;
-numberD = extractNumbers(planAmountA.textContent);
-    console.log(
-      `Sum: $ ${numberA} + ${numberB} + ${numberC} + ${numberD}  = ${sum} /mon`
-    );
- 
+  numberD = extractNumbers(planAmountA.textContent);
+  console.log(
+    `Sum: $ ${numberA} + ${numberB} + ${numberC} + ${numberD}  = ${sum} /mon`
+  );
 
-  totalaCalculation(sum)
+  totalaCalculation(sum);
 }
 
-
-
-function totalaCalculation(sum){
-
+function totalaCalculation(sum) {
   if (formtextContentC.textContent.includes("/mo")) {
     numberD = extractNumbers(planAmountA.textContent);
     // sum += numberD;
     totalAmountCalculated.textContent = `+ $${numberD + sum}/mon`;
-    console.log(
-      `Sum: $  ${numberD}  = ${numberD + sum} /mon`
-    );
+    console.log(`Sum: $  ${numberD}  = ${numberD + sum} /mon`);
   } else {
     // numberD = extractNumbers(planAmountA.textContent);
     // sum += numberD;
     totalAmountCalculated.textContent = `+$${numberD + sum}/yr`;
 
-    console.log(
-      `Sum: $  ${numberD}  = ${numberD + sum} /mon`
-    );
+    console.log(`Sum: $  ${numberD}  = ${numberD + sum} /mon`);
   }
 }
-
-
-
-
-
-
 
 // const numberA = extractNumbers(AmountTextContentA.textContent);
 
