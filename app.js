@@ -531,18 +531,21 @@ planElements.forEach((element) => {
   });
 });
 
-//button switch for nobile deveice use
+//button switch for mobile deveice use only 
 let warningForPlan = document.querySelector(".warning_ForPlan");
 buttonSwitchB.addEventListener("click", function () {
   const screenWidth = window.innerWidth;
   var switchElement = document.querySelector(".switchB");
   var mainSwitch = window.getComputedStyle(switchElement, "::after");
-  warningForPlan.innerHTML = "Please select your Yearly plan";
-  nextStepButton.disabled = true;
+ 
   if (mainSwitch.getPropertyValue("left") === "4px") {
     switchElement.style.setProperty("--mobile-value", "16px");
     monthlySwitchB.style.color = "hsl(231, 11%, 63%)";
     yearlySwitchB.style.color = "hsl(213, 96%, 18%)";
+
+    warningForPlan.style.display = "block";
+    warningForPlan.innerHTML = "Please select your Yearly plan";
+    nextStepButton.disabled = true;
    
     yearlyPlanSection.forEach(function (element) {
       element.innerHTML = "2 months free";
@@ -567,6 +570,7 @@ buttonSwitchB.addEventListener("click", function () {
     switchElement.style.setProperty("--mobile-value", "4px");
     monthlySwitchB.style.color = "hsl(213, 96%, 18%)";
     yearlySwitchB.style.color = "hsl(231, 11%, 63%)";
+    warningForPlan.style.display = "block";
     nextStepButton.disabled = true;
     warningForPlan.innerHTML = "Please select your Monthly plan";
     yearlyPlanSection.forEach(function (element) {
@@ -763,7 +767,7 @@ function calculateSum() {
 }
 
 function totalaCalculation(sum) {
-  if (formtextContentC.textContent.includes("/mo")) {
+  if (planAmountA.textContent.includes("/mo")) {
     numberD = extractNumbers(planAmountA.textContent);
     // sum += numberD;
     totalAmountCalculated.textContent = `+ $${numberD + sum}/mon`;
@@ -773,7 +777,7 @@ function totalaCalculation(sum) {
     // sum += numberD;
     totalAmountCalculated.textContent = `+$${numberD + sum}/yr`;
 
-    console.log(`Sum: $  ${numberD}  = ${numberD + sum} /mon`);
+    console.log(`Sum: $  ${numberD}  = ${numberD + sum} /yr`);
   }
 }
 
